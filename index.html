@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eko bazarek zadanie 1</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="Content-root">
+        <section class="Content-types">
+          <span class="Label-root">Typy</span>
+          <ul id="Types-list"></ul>
+          <div>
+            <input type="checkbox" id="isVege" name="isVege" />
+            <label for="isVege">Vege only</label>
+          </div>
+        </section>
+        <section class="Content-categories">
+          <span class="Label-root">Kategorie</span>
+          <ul id="Categories-list" class="Category-items"></ul>
+        </section>
+      </main>
+    </div>
+    <template id="Type-item">
+      <li><button class="Type-button">Nabiał</button></li>
+    </template>
+    <template id="Category-item">
+      <li>
+        <button class="Category-button">
+          <img
+            src="https://api-eko-bazarek.azurewebsites.net/images/categories/icons8-beef-64.png"
+          />
+          <div class="Category-label">Test</div>
+        </button>
+      </li>
+    </template>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

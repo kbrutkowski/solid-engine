@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+html,
+body {
+  background-color: #f6f5f1;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Content-root {
+  display: flex;
+  flex-direction: row;
+  max-width: 864px;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.Content-types {
+  display: block;
+  position: relative;
+  width: 160px;
+}
+
+.Content-categories {
+  margin-left: 16px;
+  flex-grow: 1;
+}
+
+.Label-root {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.Type-button {
+  text-align: left;
+  background-color: white;
+  margin-bottom: 8px;
+  border: 0;
+  border-radius: 8px;
+  width: 160px;
+  height: 42px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Type-button:hover,
+.Type-button.selected:hover {
+  background-color: #46aa42;
+  color: white;
+}
+
+.Type-button.selected {
+  background-color: #def2dd;
+}
+
+.Category-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.Category-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: white;
+  margin: 8px;
+  border: 0;
+  border-radius: 8px;
+  width: 160px;
+  height: 160px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Category-label {
+  margin-top: 16px;
+}
